@@ -1,0 +1,352 @@
+Requirement already satisfied: torchmetrics in /home/zhangd26/.local/lib/python3.12/site-packages (1.4.0)
+Requirement already satisfied: torch in /home/zhangd26/.local/lib/python3.12/site-packages (2.5.1)
+Requirement already satisfied: numpy in /home/zhangd26/.local/lib/python3.12/site-packages (2.0.2)
+Collecting pandas
+  Using cached pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Requirement already satisfied: provider in /home/zhangd26/.local/lib/python3.12/site-packages (0.1.0)
+Requirement already satisfied: packaging>17.1 in /mnt/weka/pkg/rhel94/GenuineIntel-6/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/site-packages (from torchmetrics) (24.0)
+Requirement already satisfied: lightning-utilities>=0.8.0 in /home/zhangd26/.local/lib/python3.12/site-packages (from torchmetrics) (0.15.2)
+Requirement already satisfied: pretty-errors==1.2.25 in /home/zhangd26/.local/lib/python3.12/site-packages (from torchmetrics) (1.2.25)
+Requirement already satisfied: colorama in /home/zhangd26/.local/lib/python3.12/site-packages (from pretty-errors==1.2.25->torchmetrics) (0.4.6)
+Requirement already satisfied: filelock in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (3.20.0)
+Requirement already satisfied: typing-extensions>=4.8.0 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (4.15.0)
+Requirement already satisfied: networkx in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (2025.9.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.4.127 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.127)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.4.127 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.127)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.4.127 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.127)
+Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu12==12.4.5.8 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.5.8)
+Requirement already satisfied: nvidia-cufft-cu12==11.2.1.3 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (11.2.1.3)
+Requirement already satisfied: nvidia-curand-cu12==10.3.5.147 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (10.3.5.147)
+Requirement already satisfied: nvidia-cusolver-cu12==11.6.1.9 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (11.6.1.9)
+Requirement already satisfied: nvidia-cusparse-cu12==12.3.1.170 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.3.1.170)
+Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (2.21.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.4.127 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.127)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.4.127 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (12.4.127)
+Requirement already satisfied: triton==3.1.0 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (3.1.0)
+Requirement already satisfied: setuptools in /mnt/weka/pkg/rhel94/GenuineIntel-6/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/site-packages (from torch) (70.0.0)
+Requirement already satisfied: sympy==1.13.1 in /home/zhangd26/.local/lib/python3.12/site-packages (from torch) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/zhangd26/.local/lib/python3.12/site-packages (from sympy==1.13.1->torch) (1.3.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/zhangd26/.local/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/zhangd26/.local/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /home/zhangd26/.local/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: six>=1.5 in /home/zhangd26/.local/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/zhangd26/.local/lib/python3.12/site-packages (from jinja2->torch) (3.0.3)
+Using cached pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+Installing collected packages: pandas
+Successfully installed pandas
+HYPERPARAMETERS@@@@@@@@@ learning rate 1e-05  batch size : 8  number of epochs  2  label  [7, 8]  lambda  1.0
+length of the training dataset is  93693
+######## AU ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0000
+F1-score for class c2 (operations): 0.0333
+F1-score for class c2 (supply chains): 0.0133
+F1-score for class c3 (risk description): 0.3600
+F1-score for class c4 (risk mitigation): 0.4431
+F1-score for class c4 (remediation): 0.6777
+F1-score for class c5 (effectiveness): 0.4096
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4431
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6777
+######## CA ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0000
+F1-score for class c2 (operations): 0.0212
+F1-score for class c2 (supply chains): 0.0179
+F1-score for class c3 (risk description): 0.1787
+F1-score for class c4 (risk mitigation): 0.4013
+F1-score for class c4 (remediation): 0.6166
+F1-score for class c5 (effectiveness): 0.4900
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4013
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6166
+######## UK ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0000
+F1-score for class c2 (operations): 0.0207
+F1-score for class c2 (supply chains): 0.0172
+F1-score for class c3 (risk description): 0.3301
+F1-score for class c4 (risk mitigation): 0.4959
+F1-score for class c4 (remediation): 0.7327
+F1-score for class c5 (effectiveness): 0.2917
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4959
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.7327
+######## AU ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.1558
+F1-score for class signature: 0.1212
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.2783
+F1-score for class c2 (operations): 0.2676
+F1-score for class c2 (supply chains): 0.5178
+F1-score for class c3 (risk description): 0.6036
+F1-score for class c4 (risk mitigation): 0.4426
+F1-score for class c4 (remediation): 0.6457
+F1-score for class c5 (effectiveness): 0.2500
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4426
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6457
+######## CA ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.1333
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.1833
+F1-score for class c2 (operations): 0.2563
+F1-score for class c2 (supply chains): 0.4805
+F1-score for class c3 (risk description): 0.4452
+F1-score for class c4 (risk mitigation): 0.4007
+F1-score for class c4 (remediation): 0.6041
+F1-score for class c5 (effectiveness): 0.2313
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4007
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6041
+######## UK ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.1333
+F1-score for class signature: 0.2029
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.1659
+F1-score for class c2 (operations): 0.3348
+F1-score for class c2 (supply chains): 0.5093
+F1-score for class c3 (risk description): 0.5426
+F1-score for class c4 (risk mitigation): 0.4976
+F1-score for class c4 (remediation): 0.6789
+F1-score for class c5 (effectiveness): 0.1043
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4976
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6789
+######## AU ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.4888
+F1-score for class c2 (operations): 0.5086
+F1-score for class c2 (supply chains): 0.3059
+F1-score for class c3 (risk description): 0.5051
+F1-score for class c4 (risk mitigation): 0.4433
+F1-score for class c4 (remediation): 0.6923
+F1-score for class c5 (effectiveness): 0.2912
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4433
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6923
+######## CA ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.4837
+F1-score for class c2 (operations): 0.4375
+F1-score for class c2 (supply chains): 0.1538
+F1-score for class c3 (risk description): 0.3926
+F1-score for class c4 (risk mitigation): 0.3988
+F1-score for class c4 (remediation): 0.4916
+F1-score for class c5 (effectiveness): 0.2564
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.3988
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.4916
+######## UK ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.3193
+F1-score for class c2 (operations): 0.4928
+F1-score for class c2 (supply chains): 0.2576
+F1-score for class c3 (risk description): 0.5299
+F1-score for class c4 (risk mitigation): 0.4959
+F1-score for class c4 (remediation): 0.6118
+F1-score for class c5 (effectiveness): 0.1525
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4959
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6118
+######## AU ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0811
+F1-score for class signature: 0.5806
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0446
+F1-score for class c2 (operations): 0.5912
+F1-score for class c2 (supply chains): 0.2994
+F1-score for class c3 (risk description): 0.2744
+F1-score for class c4 (risk mitigation): 0.4435
+F1-score for class c4 (remediation): 0.6596
+F1-score for class c5 (effectiveness): 0.3987
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4435
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6596
+######## CA ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.4731
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0431
+F1-score for class c2 (operations): 0.5150
+F1-score for class c2 (supply chains): 0.2248
+F1-score for class c3 (risk description): 0.1747
+F1-score for class c4 (risk mitigation): 0.3987
+F1-score for class c4 (remediation): 0.4855
+F1-score for class c5 (effectiveness): 0.3657
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.3987
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.4855
+######## UK ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.1333
+F1-score for class signature: 0.5517
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.0299
+F1-score for class c2 (operations): 0.5036
+F1-score for class c2 (supply chains): 0.3188
+F1-score for class c3 (risk description): 0.1798
+F1-score for class c4 (risk mitigation): 0.4967
+F1-score for class c4 (remediation): 0.6429
+F1-score for class c5 (effectiveness): 0.2920
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4967
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6429
+######## AU ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0811
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.2207
+F1-score for class c2 (operations): 0.3817
+F1-score for class c2 (supply chains): 0.4914
+F1-score for class c3 (risk description): 0.5749
+F1-score for class c4 (risk mitigation): 0.4438
+F1-score for class c4 (remediation): 0.6462
+F1-score for class c5 (effectiveness): 0.1405
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4438
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6462
+######## CA ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0000
+F1-score for class signature: 0.0000
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.1912
+F1-score for class c2 (operations): 0.3034
+F1-score for class c2 (supply chains): 0.4194
+F1-score for class c3 (risk description): 0.4043
+F1-score for class c4 (risk mitigation): 0.4034
+F1-score for class c4 (remediation): 0.6054
+F1-score for class c5 (effectiveness): 0.1304
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4034
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6054
+######## UK ######
+%%%%%%%%%%%% per class
+F1-score for class approval: 0.0690
+F1-score for class signature: 0.0328
+F1-score for class c1 (reporting entity): 0.0000
+F1-score for class c2 (structure): 0.1826
+F1-score for class c2 (operations): 0.4186
+F1-score for class c2 (supply chains): 0.4750
+F1-score for class c3 (risk description): 0.5470
+F1-score for class c4 (risk mitigation): 0.4974
+F1-score for class c4 (remediation): 0.6729
+F1-score for class c5 (effectiveness): 0.0877
+F1-score for class c6 (consultation): 0.0000
+#### Target class ##########
+good_result  0  i  7
+F1-score for class c4 (risk mitigation): 0.4974
+good_result  1  i  8
+F1-score for class c4 (remediation): 0.6729
+#######################VAL
+
+PBS Job 15448856.aqua
+CPU time         : 00:17:06
+Wall time        : 00:20:28
+Mem usage        : 11639164kb
+
+--- Job Runtime Information at 2025-12-30T09:33:00.551090---
+id               : 15448856.aqua
+Job_Name         : m78_l1
+Job_Owner        : zhangd26@gpu1n001.ib1.hpc.qut.edu.au
+resources_used   : cput=00:17:06,mem=11639164kb,walltime=00:20:28,ncpus=1,cpupercent=81,vmem=41463724kb,gpu_usage="gpu1n010(cuda.1.usagePerc=50.925%, cuda.1.memUsagePerc=13.085%)",cpus=0,ngpus=0
+job_state        : 5
+queue            : gpu_batch_exec
+server           : aqua
+devices          : /dev/nvidia1
+Checkpoint       : u
+Error_Path       : gpu1n001.ib1.hpc.qut.edu.au:/mnt/hpccs01/home/zhangd26/mila/code_summary/contrastive/m78_l1.e15448856
+exec_host2       : gpu1n010.ib0.hpc.qut.edu.au:15002/1
+exec_vnode       : (gpu1n010[0]:ncpus=1:ngpus=1:mem=15gb:nfpgas=0)
+Join_Path        : n
+Keep_Files       : n
+mtime            : 2025-12-30T09:12:30
+Output_Path      : gpu1n001.ib1.hpc.qut.edu.au:/mnt/hpccs01/home/zhangd26/mila/code_summary/contrastive/m78_l1.o15448856
+Resource_List    : mem=15gb,walltime=02:00:00,ncpus=1,place=free
+schedselect      : 1:ncpus=1:ngpus=1:mem=15GB:gpu_id=H100:nfpgas=0:cpu_id=any:qlist=gpu_batch_exec
+stime            : 2025-12-30T09:12:30
+session_id       : 2242927
+substate         : 50
+Variable_List    : PBS_O_HOME=/home/zhangd26,PBS_O_LANG=en_US.UTF-8,PBS_O_LOGNAME=zhangd26,PBS_O_PATH=/mnt/weka/pkg/rhel94/GenuineIntel-6/software/Python/3.12.3-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/OpenSSL/3/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/XZ/5.4.5-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/SQLite/3.45.3-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/Tcl/8.6.14-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/ncurses/6.5-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/bzip2/1.0.8-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/binutils/2.42-GCCcore-13.3.0/bin:/mnt/weka/pkg/rhel94/GenuineIntel-6/software/GCCcore/13.3.0/bin:/home/zhangd26/.local/bin:/home/zhangd26/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/c3/bin:/opt/pbs/bin:/sbin:/usr/local/bin,PBS_O_MAIL=/var/spool/mail/zhangd26,PBS_O_SHELL=/bin/bash,PBS_O_TZ=Australia/Brisbane,PBS_O_INTERACTIVE_AUTH_METHOD=resvport,PBS_O_HOST=gpu1n001.ib0.hpc.qut.edu.au,PBS_O_WORKDIR=/mnt/hpccs01/home/zhangd26/mila/code_summary/contrastive,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=gpu_batch
+euser            : zhangd26
+egroup           : default
+hashname         : 15448856.aqua
+run_count        : 1
+job_kill_delay   : 10
+Exit_status      : 1
+project          : _pbs_project_default
+run_version      : 1
+Submit_Host      : gpu1n001.ib1.hpc.qut.edu.au
+Submit_arguments : submit.aqua 
+ctime            : 2025-12-30T09:06:49

@@ -1,0 +1,19 @@
+#!/bin/bash -l
+#PBS -l select=1:ncpus=1:ngpus=1:mem=3GB:gpu_id=H100
+#PBS -l walltime=5:00:00
+#PBS -N distillModels
+cd $PBS_O_WORKDIR
+module load GCCcore/13.3.0
+module load Python/3.12.3
+module load libffi/3.4.5
+
+mkdir venv_basic
+cd venv_basic
+python -m venv env
+cd env
+source activate
+python -m pip install datasets evaluate torch numpy pandas provider torchmetrics peft --user
+cd ../../
+python3 main.py --lr=1e-6 --dropout=0.2 --epochs=2 --batch_size=8 --temp=1 --alpha=10 --dataset="uk"
+
+
